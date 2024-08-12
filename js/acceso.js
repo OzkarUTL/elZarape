@@ -4,7 +4,7 @@ function login(){
     let psw=document.getElementById("txtPsw").value;
     
     if(usr == "admin" && psw == "admin"){
-        location.href="http://localhost:8080/ElZarape/html/principal.html";
+        location.href="https://github.com/OzkarUTL/elzarape/blob/main/html/principal.html";
     }
     else{
         Swal.fire({
