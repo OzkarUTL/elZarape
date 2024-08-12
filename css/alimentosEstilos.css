@@ -1,0 +1,26 @@
+.logo{
+    height:300px;
+    width: auto;
+    background-image: url(../img/Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FEF3E2;
+}
+
+.fondo{
+    background-color: #FEF3E2;
+}
+
+.btnAli{
+    margin: 1px;
+    margin-right: 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color:#FAAF08;
+}
+
+
+
+
+
+// #FAAF08  #FA812F  #FA4032 #FEF3E2 

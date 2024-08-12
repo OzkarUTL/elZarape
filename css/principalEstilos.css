@@ -1,0 +1,26 @@
+.btnPrin{
+    background-color: #FAAF08;
+    border: 5px solid black;
+    margin: 1px;
+}
+
+.loguito{
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #FEF3E2;
+}
+
+.fondoBtnPrin{
+    text-align-all: right;
+}
+
+
+.piesito{
+    background-color: #fa4032;
+}
+
+#contenedorPrincipal{
+    background-color: #FEF3E2;
+}
+
+// #FAAF08  #FA812F  #FA4032 #FEF3E2 
