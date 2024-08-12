@@ -1,0 +1,100 @@
+<div>
+    <h1>Bebidas</h1>
+    <section class="row col-12">
+        <div id="formBeb">
+            <div class='col-12'>
+                <div class='row'>
+                    <div class='col-1'>
+                        <div class='form-floating'>
+                            <input type="text" readonly class='form-control' id='txtIdBeb'>
+                            <label for='txtIdBeb'>ID</label>
+                        </div>
+                    </div>
+                    <div class='col-5'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtNomBeb'>
+                            <label for='txtNomBeb'>Nombre</label>
+                        </div>
+                    </div>
+                    <div class='col-6'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtDesBeb'>
+                            <label for='txtDesBeb'>Descripción</label>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-6'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtCatBeb'>
+                            <label for='txtCatBeb'>Categoría</label>
+                        </div>
+                    </div>
+                    <div class='col-5'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtPreBeb'>
+                            <label for='txtPreBeb'>Precio</label>
+                        </div>
+                    </div>
+                    <div class='col-1'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtEstBeb'>
+                            <label for='txtEstBeb'>Estatus</label>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class="col-4">
+                        <input type="file" id="ifFotoBeb" onChange="cargarImgBeb();">
+                    </div>
+                    <div class="col-5">
+                        <img src="" alt="Imagen" id="fotoBeb" height="100" width="100"/>
+                    </div>
+                    <div class="col-12">
+                        <textarea id="txtFotoBeb" rows="5" cols="100"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class='col-12 text-center'>
+        <br>
+        <button type='button' class="btn col-3 btnBeb m-2" onClick="agregarBeb();">Insertar</button>
+        <button type='button' class="btn col-3 btnBeb m-2" onClick="modBeb(w);">Modificar</button>
+        <button type='button' class="btn col-3 btnBeb m-2" onClick="cancelarBeb();">Cancelar</button>
+        <br>
+        <br>
+    </section>
+    <div class='row col-12 m-1'>
+        <div class='col-11 form-floating'>
+            <input type="search" class='form-control' id='txtBusqBeb'>
+            <label for='txtBusqBeb'>Busqueda</label>
+        </div>
+        <br>
+        <div class='col-1'>
+            <button type="button" class="btn btn-lg btn-warning" onClick="buscarBeb();">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </button>
+        </div>
+    </div>
+    <div id="catBeb">
+        <br>
+        <table border="2" class="col-12 m-2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Estatus</th>
+                    <th>Foto</th>
+                    <th><p></p></th>
+                </tr>
+            </thead>
+            <tbody id="tbCatBeb">
+            </tbody>
+        </table>
+    </div>
+</div>

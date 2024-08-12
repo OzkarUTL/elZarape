@@ -1,0 +1,100 @@
+<div>
+    <h1>Usuario</h1>
+    <section class="row col-12">
+        <div id="formUsr">
+            <div class='col-12'>
+                <div class='row'>
+                    <div class='col-1'>
+                        <div class='form-floating'>
+                            <input type="text" readonly class='form-control' id='txtIdUsr'>
+                            <label for='txtIdUsr'>ID</label>
+                        </div>
+                    </div>
+                    <div class='col-5'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtNomUsr'>
+                            <label for='txtNomUsr'>Nombre</label>
+                        </div>
+                    </div>
+                    <div class='col-6'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtApeUsr'>
+                            <label for='txtApeUsr'>Apellidos</label>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-5'>
+                        <div class='form-floating'>
+                            <input type="password" class='form-control' id='txtConUsr'>
+                            <label for='txtConUsr'>Contraseña</label>
+                        </div>
+                    </div>
+                    <div class='col-6'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtTelUsr'>
+                            <label for='txtTelUsr'>Teléfono</label>
+                        </div>
+                    </div>
+                    <div class='col-1'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtInfUsr'>
+                            <label for='txtInfUsr'>Id Info</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <input type="file" id="ifFotoUsr" onChange="cargarImgUsr();">
+                    </div>
+                    <div class="col-5">
+                        <img src="" alt="Imagen" id="fotoUsr" height="100" width="100"/>
+                    </div>
+                    <div class="row">
+                        <textarea id="txtFotoUsr" rows="5" cols="100"></textarea>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class='col-12 text-center'>
+        <br>
+        <button type='button' class="btn col-3 btnUsuario m-2" onClick="agregarUsr();">Insertar</button>
+        <button type='button' class="btn col-3 btnUsuario m-2" onClick="modUsr(f);">Modificar</button>
+        <button type='button' class="btn col-3 btnUsuario m-2" onClick="cancelarUsr();">Cancelar</button>
+        <br>
+        <br>
+    </section>
+    <div class='row col-12 m-1'>
+        <div class='col-11 form-floating'>
+            <input type="search" class='form-control' id='txtBusqUsr'>
+            <label for='txtBusqUsr'>Busqueda</label>
+        </div>
+        <br>
+        <div class='col-1'>
+            <button type="button" class="btn btn-lg btn-warning" onClick="buscarUsr();">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </button>
+        </div>
+    </div>
+    <div id="catUsr">
+        <br>
+        <table border="2" class="col-12 m-2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Contraseña</th>
+                    <th>Id Info</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>Foto</th>
+                    <th><p></p></th>
+                </tr>
+            </thead>
+            <tbody id="tabCatUsr">
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+<div>
+    <h1>Sucursal</h1>
+    <section class="row col-12">
+        <div id="formSuc">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-1">
+                        <div class='form-floating'>
+                            <input type="text" readonly class='form-control' id='txtIdSuc'>
+                            <label for='txtIdSuc'>ID</label>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtNomSuc'>
+                            <label for='txtNomSuc'>Nombre</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtDirSuc'>
+                            <label for='txtDirSuc'>Dirección</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtHorSuc'>
+                            <label for='txtHorSuc'>Horario</label>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtLatSuc'>
+                            <label for='txtLatSuc'>Latitud</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtLngSuc'>
+                            <label for='txtLngSuc'>Longitud</label>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtEstSuc'>
+                            <label for='txtEstSuc'>Estatus</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <input type="file" id="ifFotoSuc" onChange="cargarImgSuc();">
+                    </div>
+                    <div class="col-5">
+                        <img src="" alt="Imagen" id="fotoSuc" height="100" width="100"/>
+                    </div>
+                    <div class="row">
+                        <textarea id="txtFotoSuc" rows="5" cols="100"></textarea>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class="col-12 tex-center">
+        <br>
+        <button type='button' class="btn col-3 m-2 btnSuc" onClick="agregarSuc();">Insertar</button>
+        <button type='button' class="btn col-3 m-2 btnSuc" onClick="modSuc(i);">Modificar</button>
+        <button type='button' class="btn col-3 m-2 btnSuc" onClick="cancelarSuc();">Cancelar</button>
+        <br><br>
+    </section>
+    <br>
+    <br>
+    <div class="row col-12 m-1">
+        <div class="col-11 form-floating">
+            <input type="search" id="txtBusqSuc" class="form-control">
+            <label for="txtBusqSuc">Busqueda</label>
+        </div>
+        <br>
+        <div class="col-1">
+        <button type="button" class="btn btn-lg btn-warning" onClick="buscarSuc();"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+        </div>
+    </div>
+        <div id="catSuc">
+            <br>
+            <table border="2" class="col-12 m-2">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th> 
+                        <th>Dirección</th>
+                        <th>Horario</th>
+                        <th>Latitud</th>
+                        <th>Longitud</th>
+                        <th>Estatus</th>
+                        <th>Foto</th>
+                        <th><p></p></th>
+                    </tr>  
+                </thead>
+                <tbody id="tbCatSuc">
+
+                </tbody>
+            </table>
+        </div>
+    </div>

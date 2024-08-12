@@ -1,0 +1,120 @@
+<div>
+    <h1>Combos</h1>
+    <section class="row col-12">
+        <div id="formCom">
+            <div class='col-12'>
+                <div class='row'>
+                    <div class='col-1'>
+                        <div class='form-floating'>
+                            <input type="text" readonly class='form-control' id='txtIdCom'>
+                            <label for='txtIdCom'>ID</label>
+                        </div>
+                    </div>
+                    <div class='col-5'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtNomCom'>
+                            <label for='txtNomCom'>Nombre</label>
+                        </div>
+                    </div>
+                    <div class='col-6'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtDesCom'>
+                            <label for='txtDesCom'>Descripción</label>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-5'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtPreCom'>
+                            <label for='txtPreCom'>Precio</label>
+                        </div>
+                    </div>
+                    <div class='col-4'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtIdBebCom'>
+                            <label for='txtIdBebCom'>Id bebida</label>
+                        </div>
+                    </div>
+                    <div class='col-3'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtCanBebCom'>
+                            <label for='txtCanBebCom'>Cantidad bebida</label>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-5'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtPreBebCom'>
+                            <label for='txtPreBebCom'>Precio bebida</label>
+                        </div>
+                    </div>
+                    <div class='col-4'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtIdAliCom'>
+                            <label for='txtIdAliCom'>Id alimento</label>
+                        </div>
+                    </div>
+                    <div class='col-3'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtCanAliCom'>
+                            <label for='txtCanAliCom'>Cantidad alimento</label>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-5'>
+                        <div class='form-floating'>
+                            <input type="text" class='form-control' id='txtPreAliCom'>
+                            <label for='txtPreAliCom'>Precio alimento</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class='col-12 text-center'>
+        <br>
+        <button type='button' class="btn col-3 btnCombo m-2" onClick="agregarCom();">Insertar</button>
+        <button type='button' class="btn col-3 btnCombo m-2" onClick="modCom(v);">Modificar</button>
+        <button type='button' class="btn col-3 btnCombo m-2" onClick="cancelarCom();">Cancelar</button>
+        <br>
+        <br>
+    </section>
+    <div class='row col-12 m-1'>
+        <div class='col-11 form-floating'>
+            <input type="search" class='form-control' id='txtBusqCom'>
+            <label for='txtBusqCom'>Busqueda</label>
+        </div>
+        <br>
+        <div class='col-1'>
+            <button type="button" class="btn btn-lg btn-warning" onClick="buscarCom();">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </button>
+        </div>
+    </div>
+    <div id="catCom">
+        <br>
+        <table border="2" class="col-12 m-2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Id bebida</th>
+                    <th>Cantidad bebida</th>
+                    <th>Precio bebida</th>
+                    <th>Id alimento</th>
+                    <th>Cantidad alimento</th>
+                    <th>Precio alimento</th>
+                    <th><p></p></th>
+                </tr>
+            </thead>
+            <tbody id="tabCatCom">
+            </tbody>
+        </table>
+    </div>
+</div>
