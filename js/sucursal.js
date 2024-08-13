@@ -142,7 +142,7 @@ function eliminarSuc(i) {
         showDenyButton: true,
         showCancelButton: true,
         confirmButtonText: "Si",
-        denyButtonText: No
+        denyButtonText: "No"
     }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
